@@ -1,4 +1,3 @@
-import React from "react";
 import { Button, Container, Nav, Navbar as NavbarBS } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { FaCartShopping } from "react-icons/fa6";

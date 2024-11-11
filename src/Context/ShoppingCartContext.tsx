@@ -1,5 +1,4 @@
 import { createContext, ReactNode, useContext, useState } from "react";
-import { PiFunctionDuotone } from "react-icons/pi";
 import ShoppinggCart from "../Components/ShoppinggCart";
 import { useLocalStorage } from "../hooks/UseLocalStorage";
 type ShoppingCartProviderProps = {
