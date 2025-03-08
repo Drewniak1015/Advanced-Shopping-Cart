@@ -63,7 +63,6 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
   function removeCartQuantity(id: number) {
     setcartItems((currItems) => {
       return currItems.filter((item) => item.id !== id);
-      // poprzez filter tworzy nowa tablice gdzie nie ma itemu o danym id
     });
   }
   const CartQuantity = cartItems.reduce(

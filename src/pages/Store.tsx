@@ -1,14 +1,18 @@
 import { Col, Row } from "react-bootstrap";
-import storeItmes from "../data/items.json";
+import storeItems from "../data/items.json";
 import StoreItem from "../Components/StoreItem";
+
 const Store = () => {
   return (
     <>
       <h1>Store</h1>
       <Row md={2} xs={1} lg={3} className="g-3">
-        {storeItmes.map((item) => (
+        {storeItems.map((item) => (
           <Col key={item.id}>
-            <StoreItem {...item}></StoreItem>
+            <StoreItem
+              {...item}
+              imgUrl={`${import.meta.env.BASE_URL}/imgs/${item.imgUrl}`}
+            />
           </Col>
         ))}
       </Row>
