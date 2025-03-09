@@ -17,7 +17,7 @@ const CartItem = ({ id, quantity }: CartItemProps) => {
   return (
     <Stack direction="horizontal" className="d-flex align-items-center" gap={2}>
       <img
-        src={`${import.meta.env.BASE_URL}/imgs/${item.imgUrl}`}
+        src={`/imgs/${item.imgUrl}`} // Zmieniono na ścieżkę względną
         alt={item.name}
         style={{ width: "125px", height: "75px", objectFit: "cover" }}
       />
